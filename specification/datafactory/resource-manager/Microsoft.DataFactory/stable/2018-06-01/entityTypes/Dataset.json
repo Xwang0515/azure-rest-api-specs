@@ -908,12 +908,17 @@
           "enum": [
             "none",
             "zlib",
-            "snappy"
+            "snappy",
+			"lzo"
           ],
           "x-ms-enum": {
             "name": "orcCompressionCodec",
             "modelAsString": true
           }
+        },
+		"enablePhysicalSchema": {
+          "type": "object",
+          "description": "Indicates whether to return physical schema. The default value is true. Type: boolean (or Expression with resultType boolean)."
         }
       },
       "required": [
